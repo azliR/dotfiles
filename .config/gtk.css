@@ -1,0 +1,14 @@
+@import 'colors.css';
+
+headerbar entry,
+headerbar spinbutton,
+headerbar button,
+headerbar separator {
+    margin: 0px;
+}
+
+headerbar {
+    min-height: 16px;
+    margin: 0px;
+    padding: 0px;
+}
