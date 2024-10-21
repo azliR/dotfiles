@@ -22,7 +22,7 @@ fi
 PATH="$HOME/.go/bin:$PATH"
 PATH="$HOME/go/bin:$PATH"
 PATH="$HOME/.fvm_flutter/bin:$PATH"
-PATH="$HOME/.fvm_flutter/bin:$PATH"
+PATH="$HOME/.pub-cache/bin:$PATH"
 PATH="$HOME/.cargo/bin:$PATH"
 
 export PATH
@@ -75,8 +75,8 @@ eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
 
 # Keybindings
 bindkey -e
-bindkey '^[[A' history-search-backward	# down arrow
-bindkey '^[[B' history-search-forward	# up arrow
+bindkey '^[[A' history-beginning-search-backward	# down arrow
+bindkey '^[[B' history-beginning-search-forward		# up arrow
 bindkey '^[w' kill-region
 bindkey '^H' backward-kill-word 		# ctrl+backspace
 bindkey '^?' backward-delete-char		# backspace
@@ -84,6 +84,9 @@ bindkey '^[[1;5C' forward-word 			# ctrl+right arrow
 bindkey '^[[1;5D' backward-word 		# ctrl+left arrow
 bindkey '^[[H' beginning-of-line 		# home
 bindkey '^[[F' end-of-line 				# end
+
+autoload -U select-word-style
+select-word-style bash
 
 zle_highlight+=(paste:none)
 
@@ -114,3 +117,7 @@ alias c='clear'
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
