@@ -1,0 +1,19 @@
+[Desktop Entry]
+Categories=Development;Utility;
+Comment[en_GB]=Build, test, and document your APIs faster
+Comment=Build, test, and document your APIs faster
+Exec=/opt/postman/Postman --ozone-platform-hint=wayland %U
+GenericName[en_GB]=
+GenericName=
+Icon=postman
+MimeType=
+Name[en_GB]=Postman
+Name=Postman
+Path=/opt/postman
+StartupNotify=true
+StartupWMClass=postman
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

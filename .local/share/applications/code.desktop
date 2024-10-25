@@ -1,0 +1,35 @@
+[Desktop Action new-empty-window]
+Exec=/usr/bin/code --new-window --ozone-platform-hint=wayland %F
+Icon=visual-studio-code
+Name=New Empty Window
+Name[de]=Neues leeres Fenster
+Name[es]=Nueva ventana vacía
+Name[fr]=Nouvelle fenêtre vide
+Name[it]=Nuova finestra vuota
+Name[ja]=新しい空のウィンドウ
+Name[ko]=새 빈 창
+Name[ru]=Новое пустое окно
+Name[zh_CN]=新建空窗口
+Name[zh_TW]=開新空視窗
+
+[Desktop Entry]
+Actions=new-empty-window;
+Categories=TextEditor;Development;IDE;
+Comment[en_GB]=Code Editing. Redefined.
+Comment=Code Editing. Redefined.
+Exec=/usr/bin/code --ozone-platform-hint=wayland %F
+GenericName[en_GB]=Text Editor
+GenericName=Text Editor
+Icon=visual-studio-code
+Keywords=vscode;
+MimeType=application/x-code-workspace;
+Name[en_GB]=Visual Studio Code
+Name=Visual Studio Code
+Path=
+StartupNotify=false
+StartupWMClass=Code
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
