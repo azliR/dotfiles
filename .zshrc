@@ -22,6 +22,7 @@ fi
 PATH="$HOME/.go/bin:$PATH"
 PATH="$HOME/go/bin:$PATH"
 PATH="$HOME/.fvm_flutter/bin:$PATH"
+PATH="$HOME/fvm/default/bin/:$PATH"
 PATH="$HOME/.pub-cache/bin:$PATH"
 PATH="$HOME/.cargo/bin:$PATH"
 
@@ -112,3 +113,9 @@ eval "$(zoxide init --cmd cd zsh)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/azlir/.dart-cli-completion/zsh-config.zsh ]] && . /home/azlir/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
