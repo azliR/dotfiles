@@ -108,7 +108,6 @@ alias c='clear'
 
 # Shell integrations
 eval "$(fzf --zsh)"
-eval "$(zoxide init --cmd cd zsh)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -119,3 +118,8 @@ export NVM_DIR="$HOME/.nvm"
 [[ -f /home/azlir/.dart-cli-completion/zsh-config.zsh ]] && . /home/azlir/.dart-cli-completion/zsh-config.zsh || true
 ## [/Completion]
 
+# Loading `.env` on VS Code embeded terminal
+if [[ "$TERM_PROGRAM" == "vscode" && -f ".env" ]]; then
+  source .env && \
+  echo "✅ loaded .env"
+fi
