@@ -148,12 +148,28 @@ enabled = true
 port = 22
 maxretry = 5
 bantime = 3600
-```
+``` 
+Restart fail2ban
+``` 
 sudo systemctl restart fail2ban
 sudo fail2ban-client status
 sudo fail2ban-client status sshd
 ```
 
+# Docker
+In local machine
+```
+docker context create customname --docker "host=ssh://uservps@hostvps"
+docker context customname
+docker swarm init
+```
+Later
+```
+docker stack deploy -c ./docker-stack.prod.yaml customname --with-registry-auth
+```
+
+
 # Inspiration
 
 The inspiration for this configuration comes from the [dotfiles by Elliot from Dreams of Autonomy](https://github.com/elliottminns/dotfiles). If you're looking for inspiration to create your own emacs configuration, or improve your system configuration synchronisation, then I'd suggest watching his videos.
+
