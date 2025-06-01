@@ -107,6 +107,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 exit
 ```
 
+You can skip to [install Docker for Ubuntu](https://docs.docker.com/engine/install/ubuntu) next.
 
 ## 4. Harden SSH
 
