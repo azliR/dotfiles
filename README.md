@@ -93,13 +93,17 @@ ssh newuser@your-server-ip
 Install zsh
 ```
 sudo apt install git curl zsh stow unzip micro -y
-sudo chsh -s $(which zsh)
+```
+```
+sudo chsh
+```
+```
 sudo curl -s https://ohmyposh.dev/install.sh | sudo bash -s -- -d /usr/bin
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
 git clone https://github.com/azliR/dotfiles
 cd dotfiles
 stow --adopt .
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
 exit
 ```
 
